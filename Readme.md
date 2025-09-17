@@ -1,3 +1,6 @@
+## 📂 Project Structure
+
+```text
 monastery360-mvp/
 ├── backend/
 │   ├── .env
@@ -14,52 +17,52 @@ monastery360-mvp/
 │   │   ├── script.py.mako
 │   │   └── README
 │   ├── app/
-│   │   ├── _init_.py
+│   │   ├── __init__.py
 │   │   ├── main.py
 │   │   ├── core/
-│   │   │   ├── _init_.py
+│   │   │   ├── __init__.py
 │   │   │   ├── config.py
 │   │   │   ├── security.py
 │   │   │   └── database.py
 │   │   ├── api/
-│   │   │   ├── _init_.py
+│   │   │   ├── __init__.py
 │   │   │   └── v1/
-│   │   │       ├── _init_.py
+│   │   │       ├── __init__.py
 │   │   │       ├── router.py
 │   │   │       └── endpoints/
-│   │   │           ├── _init_.py
+│   │   │           ├── __init__.py
 │   │   │           ├── auth.py
 │   │   │           ├── monasteries.py
 │   │   │           ├── tours.py
 │   │   │           ├── media.py
 │   │   │           └── maps.py
 │   │   ├── models/
-│   │   │   ├── _init_.py
+│   │   │   ├── __init__.py
 │   │   │   ├── base.py
 │   │   │   ├── user.py
 │   │   │   ├── monastery.py
 │   │   │   ├── tour.py
 │   │   │   └── media.py
 │   │   ├── schemas/
-│   │   │   ├── _init_.py
+│   │   │   ├── __init__.py
 │   │   │   ├── user.py
 │   │   │   ├── monastery.py
 │   │   │   ├── tour.py
 │   │   │   └── media.py
 │   │   ├── services/
-│   │   │   ├── _init_.py
+│   │   │   ├── __init__.py
 │   │   │   ├── auth_service.py
 │   │   │   ├── monastery_service.py
 │   │   │   ├── tour_service.py
 │   │   │   ├── media_service.py
 │   │   │   └── s3_service.py
 │   │   └── utils/
-│   │       ├── _init_.py
+│   │       ├── __init__.py
 │   │       ├── dependencies.py
 │   │       ├── exceptions.py
 │   │       └── helpers.py
 │   └── tests/
-│       ├── _init_.py
+│       ├── __init__.py
 │       ├── conftest.py
 │       ├── test_auth.py
 │       ├── test_monasteries.py
@@ -86,22 +89,18 @@ monastery360-mvp/
     │   │   ├── error.tsx
     │   │   ├── not-found.tsx
     │   │   ├── auth/
-    │   │   │   ├── login/
-    │   │   │   │   └── page.tsx
-    │   │   │   └── register/
-    │   │   │       └── page.tsx
+    │   │   │   ├── login/page.tsx
+    │   │   │   └── register/page.tsx
     │   │   ├── monasteries/
     │   │   │   ├── page.tsx
-    │   │   │   ├── [id]/
-    │   │   │   │   └── page.tsx
+    │   │   │   ├── [id]/page.tsx
     │   │   │   └── components/
     │   │   │       ├── MonasteryCard.tsx
     │   │   │       ├── MonasteryList.tsx
     │   │   │       └── MonasteryDetail.tsx
     │   │   ├── tours/
     │   │   │   ├── page.tsx
-    │   │   │   ├── [id]/
-    │   │   │   │   └── page.tsx
+    │   │   │   ├── [id]/page.tsx
     │   │   │   └── components/
     │   │   │       ├── Tour360Viewer.tsx
     │   │   │       ├── TourList.tsx
