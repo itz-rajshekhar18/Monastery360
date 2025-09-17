@@ -7,8 +7,6 @@ monastery360-mvp/
 │   ├── .env.example
 │   ├── .gitignore
 │   ├── requirements.txt
-│   ├── docker-compose.yml
-│   ├── Dockerfile
 │   ├── README.md
 │   ├── alembic.ini
 │   ├── alembic/
@@ -89,18 +87,22 @@ monastery360-mvp/
     │   │   ├── error.tsx
     │   │   ├── not-found.tsx
     │   │   ├── auth/
-    │   │   │   ├── login/page.tsx
-    │   │   │   └── register/page.tsx
+    │   │   │   ├── login/
+    │   │   │   │   └── page.tsx
+    │   │   │   └── register/
+    │   │   │       └── page.tsx
     │   │   ├── monasteries/
     │   │   │   ├── page.tsx
-    │   │   │   ├── [id]/page.tsx
+    │   │   │   ├── [id]/
+    │   │   │   │   └── page.tsx
     │   │   │   └── components/
     │   │   │       ├── MonasteryCard.tsx
     │   │   │       ├── MonasteryList.tsx
     │   │   │       └── MonasteryDetail.tsx
     │   │   ├── tours/
     │   │   │   ├── page.tsx
-    │   │   │   ├── [id]/page.tsx
+    │   │   │   ├── [id]/
+    │   │   │   │   └── page.tsx
     │   │   │   └── components/
     │   │   │       ├── Tour360Viewer.tsx
     │   │   │       ├── TourList.tsx
